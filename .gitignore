@@ -8,7 +8,7 @@ __pycache__/
 
 
 # personla files
-artifacts/Data
+artifacts/*
 
 # Distribution / packaging
 .Python
