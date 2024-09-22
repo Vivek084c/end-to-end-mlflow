@@ -2,7 +2,7 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_url: https://drive.usercontent.google.com/download?id=1oQMy_TQe8zp6g_cH7P8VyfFA8PnfG5IO&export=download&authuser=1&confirm=t&uuid=9eda0b80-09ee-4ecc-ad09-120157ce1d23&at=AO7h07eTS40XtLGZKsbx-bXr-DUa:1726928966434
+  source_url: https://drive.google.com/uc?/export=download&id=1vckn_uSqk5GS11aezTjAIup6ire9mawa
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
 
@@ -18,4 +18,3 @@ prepare_base_model:
 training:
   root_dir: artifacts/training
   trained_model_path: artifacts/training/model.h5
-  
