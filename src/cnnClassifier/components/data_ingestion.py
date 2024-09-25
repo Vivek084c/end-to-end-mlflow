@@ -21,8 +21,11 @@ class DataIngestion:
             # file_id = dataset_url.split("/")[-2]
             # prefix = "baki h"
             # gdown.download(prefix+file_id, zip_download_dir)
-            gdown.download(dataset_url, zip_download_dir)
-            logger.info(f"Downloaded data from {dataset_url} into file {zip_download_dir}")
+            if not os.path.isdir("artifacts/data_ingestion"):
+                gdown.download(dataset_url, zip_download_dir)
+                logger.info(f"Downloaded data from {dataset_url} into file {zip_download_dir}")
+            else:
+                logger.info(f"Directory available localy")
         except Exception as e:
             raise e
         

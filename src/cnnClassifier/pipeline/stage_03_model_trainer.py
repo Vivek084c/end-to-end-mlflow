@@ -8,7 +8,7 @@ class ModelTrainingPipeline:
 
     def __init__(self) -> None:
         pass
-    def main():
+    def main(self):
         config = ConfigurationManager()
         training_config = config.get_training_config()
         training = Training(config=training_config)
